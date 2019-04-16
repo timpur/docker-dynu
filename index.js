@@ -37,7 +37,7 @@ const run = async () => {
     const ipv6 = await getWanIp(true);
 
     if (!ipv4 && !ipv6) {
-      console.log("Coult not get an IPv4 or IPv6 address");
+      console.log("Could not get an IPv4 or IPv6 address");
       return;
     }
     if (!ipHasChanged(ipv4, ipv6)) {
@@ -66,9 +66,9 @@ const run = async () => {
 
 const init = () => {
   const { USERNAME, PASSWORD, LOCATION, PERIOD } = process.env;
-  if (!USERNAME) throw new Error("USERNAME required env");
-  if (!PASSWORD) throw new Error("PASSWORD required env");
-  if (!LOCATION) throw new Error("LOCATION required env");
+  if (!USERNAME) throw new Error("USERNAME is required in env");
+  if (!PASSWORD) throw new Error("PASSWORD is required in env");
+  if (!LOCATION) throw new Error("LOCATION is required in env");
 
   const interval = PERIOD ? parseInt(PERIOD) * 1000 : 30 * 1000;
   setInterval(() => run(), interval);
