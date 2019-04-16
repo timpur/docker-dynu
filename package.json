@@ -1,0 +1,20 @@
+{
+  "name": "docker-dynu",
+  "version": "0.1.0",
+  "description": "Docker DYNU Client",
+  "main": "index.js",
+  "author": "timpur",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timpur/docker-dynu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timpur/docker-dynu/issues"
+  },
+  "homepage": "https://github.com/timpur/docker-dynu#readme",
+  "scripts": {},
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}
