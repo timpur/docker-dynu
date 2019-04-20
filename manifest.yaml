@@ -1,0 +1,11 @@
+image: registry.purchas.com/network/dynu
+manifests:
+  - image: registry.purchas.com/network/dynu:amd64-latest
+    platform:
+      architecture: amd64
+      os: linux
+  - image: registry.purchas.com/network/dynu:arm32v7-latest
+    platform:
+      architecture: armhf
+      os: linux
+xx1

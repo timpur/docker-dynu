@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-COPY . .
+COPY package.json package-lock.json index.js ./
 
 RUN npm ci
 
