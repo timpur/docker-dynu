@@ -6,5 +6,6 @@ manifests:
       os: linux
   - image: registry.purchas.com/network/dynu:arm32v7-latest
     platform:
-      architecture: armhf
+      architecture: arm
+      variant: v7
       os: linux
